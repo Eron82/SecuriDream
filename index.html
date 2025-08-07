@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Проклятая Игра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('ru')">🇷🇺</button>
+    <button onclick="setLanguage('en')">🇺🇸</button>
+  </div>
+
+  <div class="overlay">
+    <h1 id="gameTitle">Проклятая Игра</h1>
+    <p id="welcomeText">Ты не должен был сюда заходить...</p>
+
+    <section>
+      <h2 id="screenshotsTitle">Скриншоты</h2>
+      <img src="N1.png" alt="Скриншот 1">
+      <img src="N2.png" alt="Скриншот 2">
+    </section>
+
+    <section>
+      <h2 id="trailerTitle">Трейлер</h2>
+      <iframe src="https://www.youtube.com/watch?v=TPKn588AIWI" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <button class="btn-download" onclick="window.location.href='game-download.zip'">💾 <span id="downloadText">Скачать</span></button>
+    </section>
+
+    <footer>
+      © 2025 SecuriTeam
+    </footer>
+  </div>
+
+  <script>
+    const langData = {
+      ru: {
+        gameTitle: "SecuriDream",
+        welcomeText: "Ты не должен был сюда заходить...",
+        screenshotsTitle: "Скриншоты",
+        trailerTitle: "Трейлер",
+        downloadText: "Скачать"
+      },
+      en: {
+        gameTitle: "SecuriDream",
+        welcomeText: "You weren’t supposed to be here...",
+        screenshotsTitle: "Screenshots",
+        trailerTitle: "Trailer",
+        downloadText: "Download"
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById("gameTitle").innerText = langData[lang].gameTitle;
+      document.getElementById("welcomeText").innerText = langData[lang].welcomeText;
+      document.getElementById("screenshotsTitle").innerText = langData[lang].screenshotsTitle;
+      document.getElementById("trailerTitle").innerText = langData[lang].trailerTitle;
+      document.getElementById("downloadText").innerText = langData[lang].downloadText;
+    }
+  </script>
+
+</body>
+</html>

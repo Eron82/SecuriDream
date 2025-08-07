@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  border-bottom: 1px solid #444;
+  margin-top: 3rem;
+}
+
+.lang-switch {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.lang-switch button {
+  background: none;
+  color: #aaa;
+  border: 1px solid #666;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+img {
+  width: 300px;
+  margin: 10px;
+  border: 3px solid #900;
+  box-shadow: 0 0 15px red;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 90%;
+  max-width: 720px;
+  height: 400px;
+  margin-top: 1rem;
+  border: 3px solid #900;
+  box-shadow: 0 0 10px red;
+}
+
+.btn-download {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px red;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
